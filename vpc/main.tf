@@ -31,7 +31,7 @@ output "vpc_id" {
   value       = "aws_apc.main.id"
 }
 output "public_subnet_id" {
-    value = aws_subnet.public.id
+    value = aws_subnet.public[count.index]
 }
 
 
