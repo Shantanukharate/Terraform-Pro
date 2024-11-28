@@ -3,7 +3,7 @@ resource "aws_instance" "web" {
     instance_type = var.instance_type
     count = var.instance_count
 
-    assosiate_public_ip_address = true 
+    associate_public_ip_address = true 
 
     tags ={
         Name = "web-instance-${count.index + 1}"
