@@ -3,7 +3,6 @@ resource "aws_instance" "web" {
     instance_type = var.instance_type
     count = var.instance_count
 
-    subnet_id = aws_subnet.public.id
     assosiate_public_ip_address = true 
 
     tags ={
