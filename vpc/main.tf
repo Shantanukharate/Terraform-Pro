@@ -29,6 +29,7 @@ resource "aws_subnet" "private" {
 
 output "vpc_id" {
   value       = "aws_apc.main.id"
+}
 output "public_subnet_id" {
     value = aws_subnet.public.id
 }
